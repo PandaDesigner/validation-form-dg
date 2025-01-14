@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#registerForm {
+  width: 30%;
+  min-height: 60%;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  div#registerForm {
+    width: 90%;
+    margin: 65px auto;
+  }
+
+  div.header {
+    height: 45px;
+  }
+
+  h2.header-title {
+    font-size: 1.2rem;
+  }
+}
+
+.header {
+  background-color: #4f06b5;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  list-style: none;
+  line-height: 1.8rem;
+  margin: 0px;
+  font-weight: 700;
+  text-align: center;
+  color: #f0e7ff;
+}
+
+.text-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4f06b5;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.text-label ~ input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #230250;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.inline,
+.inline ~ input[type='checkbox'] {
+  color: #4f06b5;
+}
+
+#formRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 80%;
+}
+
+input[type='submit'] {
+  width: 100%;
+  padding: 14px;
+  margin: 18px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f06b5;
+  color: #f0e7ff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.formGroup {
+  width: 80%;
+  padding: 20px 20px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.error {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  margin: 2px 0px;
+}
+
+.error.visible {
+  display: block;
+}
+
+input[type='checkbox'] {
+  margin-top: 16px;
+}
+
+input[type='submit']:hover {
+  background-color: #230250;
+}

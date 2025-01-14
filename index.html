@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Proyecto de validación de formulario</title>
+</head>
+
+<body>
+    <div id="registerForm">
+        <div class="header">
+            <h2 class="header-title">Formulario de Registro</h2>
+        </div>
+        <form id="formRegister">
+            <div class="formGroup">
+                <label class="text-label" for="name">Nombre:</label>
+                <input type="text" id="name" name="name" minlength="3" />
+                <p class="error" id="errorName"></p>
+
+                <label class="text-label" for="lastName">Apellido:</label>
+                <input type="text" id="lastName" name="lastName" minlength="3" />
+                <p class="error" id="errorLastName"></p>
+
+                <label class="text-label" for="document">Documento:</label>
+                <input type="text" id="document" name="document" minlength="3" />
+                <p class="error" id="errorDocument"></p>
+
+                <label class="text-label" for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" />
+                <p class="error" id="errorEmail" aria-live="polite"></p>
+
+                <label class="text-label" for="age">Edad:</label>
+                <input type="number" id="age" name="age" />
+                <p class="error" id="errorAge" aria-live="polite"></p>
+
+
+                <label class="text-label" for="activity">Actividad:</label>
+                <select name="activity" id="activity">
+                    <option value="0">Seleccione una actividad</option>
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="programacion">Programación</option>
+                    <option value="Inteligencia artificial">Inteligencia Artificial</option>
+                    <option value="automatizacion">Automatización</option>
+                    <option value="sistemas">Sistemas</option>
+                    <option value="Educación">Educación</option>
+                </select>
+                <p class="error" id="errorActivity" aria-live="polite"></p>
+                <br>
+
+                <label class="text-label" for="nivelEstudio">Nivel de Estudio:</label>
+                <select name="nivelEstudio" id="nivelEstudio">
+                    <option value="0">Seleccione un nivel de estudio</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="tecnologo">Tecnólogo</option>
+                    <option value="profesional">Profesional</option>
+                    <option value="especializacion">Especialización</option>
+                    <option value="maestria">Maestría</option>
+                    <option value="doctorado">Doctorado</option>
+                </select>
+                <p class="error" id="errorNivelEstudio" aria-live="polite"></p>
+                <br>
+                <label class="inline">
+                    <input type="checkbox" name="terms" id="terms" />
+                    Acepto los términos y condiciones
+                </label>
+                <p class="error" id="errorTerms" aria-live="polite"></p>
+                <br>
+                <label class="inline">Publicidad</label>
+                <input type="checkbox" name="publicidad" id="Ofertas" value="Ofertas" />
+                <label class="inline">Ofertas</label>
+                <input type="checkbox" name="publicidad" id="Novedades" value="Novedades" />
+                <label class="inline">Novedades</label>
+                <p class="error" id="errorPublicidad" aria-live="polite"></p>
+                <br>
+                <input type="submit" value="Registrate" />
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
